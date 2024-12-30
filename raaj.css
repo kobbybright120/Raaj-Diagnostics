@@ -80,8 +80,6 @@ header{
     border-bottom-left-radius:10px;
     display:none;  
     z-index:2; 
-  
-
 }
 
 .menu-list-hidden>ul{
@@ -193,6 +191,7 @@ header{
     max-width: 100%;
     border:15px solid #aa9bb854;
     border-radius:9px;
+    max-width: 100%;
 
 }
 .doctor-image{
@@ -368,7 +367,7 @@ header{
 .genetics-mini-text{
     text-align:center;
     color:white;
-    font-size: 15px;
+    font-size:15px;
     font-family:"ubuntu-light";
     line-height:20px;
     margin-bottom: 30px;
@@ -426,9 +425,9 @@ header{
 .fifth-content-image-mini-text{
     margin:5px 10px 0px 15px;
     font-family:"poppins-light";
-    line-height:24px;
-    font-size:16px;
-    text-align:justify;
+    line-height:20px;
+     font-size:15px;
+    text-align:center;
     color:rgb(44, 43, 43);    
 }
 
@@ -518,7 +517,7 @@ header{
     .QandA{
         display:flex;
         flex-direction:column;
-        align-items:start;
+        align-items:center;
         margin:10px 0px 20px 20px;
    }
    .question-cover{
@@ -553,12 +552,13 @@ header{
   
    }
    .answer-mini-text{
-    margin:3px 20px 10px 20px;
+    margin:3px 0px 10px 0px;
     font-family:"poppins-light";
     line-height:24px;
     font-size:16px;
     text-align:justify;
     color:white;    
+    width:300px;
    }
    .question-container{
     display: flex;
@@ -592,21 +592,30 @@ header{
     align-items:center;
     display:flex;
     flex-direction:column;
-    margin:20px;
     color:#47026c;
     position: relative;
    }
-   .footer-image{
+  
+
+   .footer-image-container{
+    margin:0px 10px 10px 10px;
+    align-items: center;
+    max-width: 100%;
+    border:15px solid #aa9bb854;
+    border-radius:9px;
+
+}
+.footer-image{
     max-width:100%;
-    width:370px;
-    border-radius:15px;
-    }
-   .icons-container{
+    width:400px;
+} 
+  .icons-container{
     display:flex;
     flex-direction:row;
     align-items: center;
     margin:25px
    }
+   
    .icon-text{
       font-family:"ubuntu-light";
       font-size:20px;
@@ -644,9 +653,354 @@ header{
     color:whitesmoke;
     text-align: center;
    }
+
+   @media (min-width:768px) and (max-width:1024px){
+
+    header{
+        padding:10px;
+        width:100%;
+    }
+    .logo{
+        display:flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items:center;
+    }
+   
+    .logo-name{
+        font-size:17px;
+        margin:7px;
+    }
+    
+    .fa-bars{
+        color:white;
+        font-size:28px;
+        transition: transform 0.3s;
+    } 
+    .fa-bars-rotate{
+        transform: rotate(90deg);
+      }
+    .menu-list-hidden{
+        position:absolute;
+        background-color:white;
+        top:8%;
+        right:0%;
+        width:250px;
+        box-shadow: 0px 0px 15px rgb(80, 80, 80);
+        border-bottom-left-radius:15px;
+        display:none;     
+    }
+    
+    .menu-list-hidden>ul{
+        display:block;
+        margin:15px 0px;
+        align-items:center;
+    }
+   
+    .first-main-content-text-container{
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        justify-content: center;
+        margin:30px 0px 0px 0px;
+       }
+     
+       .first-main-content-text{
+        color:#47026c;
+        font-family:"ubuntu-light";
+        font-size:3.3em;
+        align-items: center;
+        margin:0px;
+        width:x;
+    }
+    
+    .first-main-content-mini-text{
+        margin:15px 100px 10px 100px;
+        font-family:"poppins-light";
+        line-height:24px;
+        font-size:18px;
+        text-align:center;
+        color:rgb(44, 43, 43);
+    }
+    .large-contact-conatainer{
+        display:none;
+    }
+
+    .first-image-content-image-container{
+        margin:15px 15px 20px 15px;
+        align-items: center;
+        max-width: 100%;
+        border:30px solid #aa9bb854;
+        border-radius:10px;
+        max-width:100%;
+
+    
+    }
+    .doctor-image{
+        width:100%;
+        max-width:100%;
+
+    }
+    .contact-conatainer{
+        border:none;
+        padding:15px 80px 15px 80px;
+      }
+      
+      .doc-gudiance-image-container{
+        margin:15px 15px 20px 15px;
+        align-items: center;
+        max-width: 100%;
+        border:30px solid #aa9bb854;
+        border-radius:10px;
+      }
+      .doc-image{
+        max-width:100%;
+        width:800px;        
+      }
+
+      .nd-content-main-text{
+        margin:0px 10px 30px 10px;
+        font-size:3.5em;
+    
+    }
+    .nd-content-mini-text{
+        font-size:17px;
+    }
+    
+  
+    .doc-image-container{
+        margin:20px 15px 20px 15px;
+        align-items: center;
+        max-width: 100%;
+        border:30px solid #aa9bb854;
+        border-radius:10px;
+    }
+    
+    .rd-content-main-text{
+        margin:30px 5px 20px 5px;
+        font-size:3.4em;
+    }
+    .rd-content-mini-text{
+        margin:10px 55px 0px 55px;
+        font-size:17px; 
+        text-align: center;
+    }
+
+    .rating-container{
+        display:flex;
+        flex-direction:row;
+        text-align:left;
+        align-items:center;
+        margin:15px 0px 0px 0px;
+        }
+    .twenty-four-container{
+        display: flex;
+        flex-direction:column;
+        align-items:center;
+        margin-right:50px;
+        width: 150px; 
+        text-align:center;
+    }
+    .twenty-four-hours{
+        font-size:3.5em;
+        text-align:center;
+        
+        margin:0px;
+    }
+    .twenty-four-hours-mini-text{
+        font-size:17px;        
+    }
+    
+    .fourth-content{
+        width:100%;
+        }
+
+        .fourth-content{
+            background-color:#59189a;
+            display:flex;
+            flex-direction:column;
+            align-items: center;
+            margin:0px;
+            text-align: center;
+            width:100%;
+        
+        }
+        .fth-content-main-text{
+            margin:30px 10px 10px 10px;
+            color:white;
+            font-family:"ubuntu-light";
+            font-size:3.4em;
+            text-align:center;
+            position: relative;
+        } 
+        .fourth-content-main-text-container{
+            display:block;
+        }
+        .fourth-diagnostic-tools-container{
+            display:grid;
+            grid-template-columns: repeat(2, 2fr);
+        }
+        .gen-container{
+            border:1px solid rgba(255, 255, 255, 0.226);
+            border-top:none;
+            border-right:none;
+            margin:0px;
+            display:block;
+        }
+        
+        .genetics-main-text{
+            color:white;
+            font-family: "poppins-light";
+            font-size:26px;
+            margin-bottom:0px;
+        
+        }
+        .genetics-mini-text{
+            text-align:center;
+            color:white;
+            font-size:16px;
+            font-family:"ubuntu-light";
+            line-height:20px;
+            margin:0px 30px 30px 30px;    
+        }
+        
+    .fifth-content{
+        width:100%; 
+    }
+    
+    .fifth-content-main-text{
+        font-size:3.5em;
+    }
+   
+     .fifth-content-mini-text{
+        margin:10px 20px 20px 20px;
+        font-size:17px;
+        text-align:center;
+    } 
+
+  
+    
+    .fifth-content-images{
+        width:250px;
+        height:250px;
+    }
+    
+    .fifth-content-image-main-text{
+        margin:13px 0px 5px 0px;
+        font-size:26px;
+    }
+    .fifth-content-image-mini-text{
+        margin:5px 10px 0px 15px;
+        font-size:17px;
+        text-align:center;
+        width:500px; 
+    }
+    
+    .sixth-content{
+         height:30vh;  
+         margin:30px 0px 0px 0px;        
+        
+    }
+      
+        .fa-quote-left{
+            font-size:8em;
+            margin-top:10px;
+            
+        }
+        .sixth-content-text{
+            margin:0px 35px 0px 35px;
+            font-size:24px;
+            line-height: 1.2em;
+        }
+        .seventh-content{
+            width:100%;        
+        }
+        .seventh-image-container{
+            margin:20px 15px 20px 15px;
+            align-items: center;
+            max-width: 100%;
+            border:30px solid #aa9bb854;
+            border-radius:10px;
+            }
+        .nurse-portrait{
+            max-width:100%;        
+            width:800px;            
+        }
+       .seventh-text-container{
+          align-items: center;
+          display: block;
+          margin:0px 10px 0px 10px;
+       }
+      .seventh-content-main-text{
+          margin:10px 25px 5px 25px;
+          font-size:3.5em;
+          position: relative;
+      }
+        
+       .seventh-content-mini-text{
+            margin:10px 25px 5px 25px;
+            font-family:"poppins-light";
+            line-height:24px;
+            font-size:17px;
+            text-align:center;
+            color:white;   
+       }
+        .QandA{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            margin:10px 20px 20px 20px;
+       }
+       .question{       
+            font-size:17px;
+            text-align:left;
+            position:relative;
+       }
+       .answer-mini-text{
+        margin:3px 20px 5px 20px;
+        font-size:17px;
+        width:300px;
+       }
+      
+       .footer-main-header{
+        margin:30px 25px 20px 55px;
+        font-size:3.5em;
+       }
+       .footer-mini-text{
+        margin:0px 30px 0px 30px;
+        padding:3px;
+        font-size:17px;    
+       }
+       .footer-contact-us-container{
+        margin-top:20px;       
+       }
+       .footer-image-container{
+        margin:15px 10px 20px 10px;
+        align-items: center;
+        width: 100%;
+        border:30px solid #aa9bb854;
+        border-radius:10px;       
+       }
+       .footer-image{
+        width:100%;
+        }
+       .icons-container{
+        display:flex;
+        flex-direction:row;
+        align-items: center;
+        margin:25px
+       }
+   
+       .fa-facebook:hover,.fa-instagram:hover,.fa-tiktok:hover{
+        background: #47026c;
+        transform: scale(1.1);
+        color:whitesmoke;
+       }  
+    
+   }
   
 
-   @media (min-width:1024px){
+   @media (min-width:1024px) and (max-width:2154px){
      .fa-bars{
         display:none;
      }
@@ -862,14 +1216,11 @@ header{
     font-family:"Ubuntu-medium";
     line-height:1.2em;
     text-align:left;
-    
     margin:0px;
 }
 .twenty-four-hours-mini-text{
     font-family: "poppins-light";
     font-size:16px;
-    
-    
 }
 .ninty-nine-container{
     display: flex;
@@ -1124,9 +1475,11 @@ footer{
    }
    .footer-main-text-container{
     display: block;
+    margin:50px 35px 10px 35px;
+    align-items: center;
+
    }
 .footer-main-header{
-    margin:40px 35px 10px 35px;
     color:#47026c;
     font-family:"ubuntu-light";
     font-size:3.3em;
@@ -1146,12 +1499,14 @@ footer{
 
 
    }
+   .footer-image-container{
+    border:30px solid #aa9bb854; 
+    margin:30px;
+   }
    .footer-image{
     max-width:100%;
     width:600px;
-    border:30px solid #aa9bb854;
-    border-radius: 10px;   
- }
+     }
     .copy-right-container{
     background-color: #47026c;
     width:100%;
@@ -1167,97 +1522,4 @@ footer{
        }
    } 
 
-   @media (min-width:768px) and (max-width:1024px){
-
-    header{
-        padding:15px;
-        width:100%;
-    }
-    .logo{
-        display:flex;
-        flex-direction: row;
-        justify-content:center;
-        align-items:center;
-    }
    
-    .logo-name{
-        font-size:17px;
-        margin:7px;
-    }
-    
-    .fa-bars{
-        color:white;
-        font-size:28px;
-        transition: transform 0.3s;
-    } 
-    .fa-bars-rotate{
-        transform: rotate(90deg);
-      }
-    .menu-list-hidden{
-        position:absolute;
-        background-color:white;
-        top:8%;
-        right:0%;
-        width:250px;
-        box-shadow: 0px 0px 15px rgb(80, 80, 80);
-        border-bottom-left-radius:15px;
-        display:none;     
-    }
-    
-    .menu-list-hidden>ul{
-        display:block;
-        margin:15px 0px;
-        align-items:center;
-    }
-    .first-main-content-text-container{
-        display:flex;
-        flex-direction:row;
-        align-items:center ;
-       }
-       .first-main-content-text{
-        margin:0px 0px 20px 0px;
-        color:#47026c;
-        font-family:"ubuntu-light";
-        font-size:2.5em;
-        width:400px;
-        text-align:center;
-        background-color: red;
-    }
-    
-    .first-main-content-mini-text{
-        margin:0px 5px 10px 5px;
-        font-family:"poppins-light";
-        line-height:24px;
-        font-size:16px;
-        text-align:center;
-        color:rgb(44, 43, 43);
-    }
-    .large-contact-conatainer{
-        display:none;
-    }
-    .contact-conatainer{
-        background:#3c096c;
-        background: linear-gradient(0deg, #3c096c 0%, #7b2cbf 100%);
-        border:none;
-        padding:13px 50px 13px 50px;
-        text-align: center;
-        align-items: center;
-        border-radius:13px;  
-        color:white;
-        font-family:"poppins-light";
-        font-size:16px;
-    
-      }
-      .contact-conatainer:before {
-        height: 0%;
-        width: 2px;
-      }
-      .contact-conatainer:hover {
-        box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
-                    -4px -4px 6px 0 rgba(116, 125, 136, .5), 
-          inset -4px -4px 6px 0 rgba(255,255,255,.2),
-          inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
-      }
-    
-     
-   }

@@ -1,0 +1,1082 @@
+*{
+    padding:0;
+    margin:0;
+    list-style:none;
+    text-decoration:none;
+    box-sizing: border-box;
+}
+html,body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family:unbounded-regular;
+    src: url('Unbounded/static/Unbounded-Regular.ttf');
+}
+@font-face {
+    font-family:poppins-light;
+    src: url(Poppins/Poppins-Light.ttf);
+}
+@font-face {
+    font-family:poppins-medium;
+    src: url('Poppins/Poppins-Medium.ttf');
+}
+@font-face {
+    font-family:ubuntu-light;
+    src: url('Ubuntu/Ubuntu-Light.ttf');
+}
+@font-face {
+    font-family:Ubuntu-medium;
+    src: url('Ubuntu/Ubuntu-Medium.ttf');
+}
+@font-face {
+    font-family:ubuntu-bold;
+    src: url('Ubuntu/Ubuntu-Bold.ttf');
+}
+header{
+    background-color:#310055;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px;
+    width:100%;
+}
+.logo{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+}
+.image-logo{
+    width:50px;
+    border-radius:50%;
+    cursor:pointer;
+}
+.logo-name{
+    font-size:16px;
+    color:white;
+    text-align:left;
+    margin:5px;
+    font-family:"unbounded-regular"
+}
+
+.fa-bars{
+    color:white;
+    font-size:26px;
+    transition: transform 0.3s;
+} 
+.fa-bars-rotate{
+    transform: rotate(90deg);
+  }
+.menu-list-hidden{
+    position:absolute;
+    background-color:white;
+    top:9%;
+    right:0%;
+    width:160px;
+    box-shadow: 0px 0px 10px rgb(80, 80, 80);
+    border-bottom-left-radius:10px;
+    display:none;  
+    z-index:2; 
+}
+
+.menu-list-hidden>ul{
+    display:block;
+    margin:15px 0px;
+}
+
+.menu-list-hidden>ul>li{
+    color:#5a189a;
+    font-family: "poppins-light";
+    line-height:50px;
+    transition:0.3s,color 0.3s;
+}
+
+
+.menu-list-hidden>ul>li:hover{
+    background:#9d4edd;
+    color:white;
+    }
+    .menu-list-hidden>ul>li>a{
+        color:inherit;
+        margin:0px 10px;
+} 
+.main-content{
+    background:linear-gradient(to bottom,#d8b1ff4d,#d8b1ff48);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    height: auto;
+  
+ }
+ .first-main-content-text-container{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    max-width:100%;
+    padding:5px 0px 0px 5px;
+}
+
+
+.first-main-content-text{
+    margin:0px 0px 20px 0px;
+    color:#47026c;
+    font-family:"ubuntu-light";
+    font-size:36px;
+    text-align:center;
+}
+
+.first-main-content-mini-text{
+    margin:0px 5px 10px 5px;
+    font-family:"poppins-light";
+    line-height:24px;
+    font-size:16px;
+    text-align:center;
+    color:rgb(44, 43, 43);
+}
+.contact-container-large{
+    display:none;
+}
+
+.first-image-content-image-container{
+    margin:0px 10px 10px 10px;
+    align-items: center;
+    max-width: 100%;
+    border:15px solid #aa9bb854;
+    border-radius:9px;
+
+
+}
+.doctor-image{
+    max-width:100%;
+    width:400px;
+    display: block;
+}
+
+.nd-content{
+    background:linear-gradient(to bottom,#d8b1ff4d,#d8b1ff48);
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    margin-top:20px;
+}
+.doc-gudiance-image-container{
+    margin:20px 10px 0px 10px;
+    align-items: center;
+    max-width: 100%;
+    border:15px solid #aa9bb854;
+    border-radius:9px;
+
+    }
+.doc-image-container{
+    margin:0px 10px 10px 10px;
+    align-items: center;
+    max-width: 100%;
+    border:15px solid #aa9bb854;
+    border-radius:9px;
+}
+
+.doc-image{
+    max-width:100%;
+    width:auto;
+    height:auto;
+    display: block;
+    
+} 
+
+
+.nd-content-main-text{
+    margin:30px 5px 15px 5px;
+    color:#47026c;
+    font-family:"ubuntu-light";
+    font-size:36px;
+    text-align:center;
+}
+.nd-content-mini-text{
+    margin:0px 15px 15px 15px;
+    font-family:"poppins-light";
+    line-height:24px;
+    font-size:16px;
+    text-align:justify;
+    color:rgb(44, 43, 43);
+}
+.contact-container{
+    display:flex;
+     align-items: center;
+     justify-content: center;
+     margin:0px 15px 20px 15px;
+}
+.contact-link{
+    background:#3c096c;
+    background: linear-gradient(0deg, #3c096c 0%, #7b2cbf 100%);
+    border:none;
+    padding:13px 50px 13px 50px;
+    text-align: center;
+    align-items:center;
+    border-radius:13px;  
+    color:white;
+    font-family:"poppins-light";
+    font-size:16px;
+
+  }
+  .contact-link:before {
+    height: 0%;
+    width: 2px;
+  }
+  .contact-link:hover {
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.2),
+      inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+  }
+
+
+
+.rd-content{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    margin-top:15px;
+    width:100%;
+
+}
+.rd-image-container{
+    display:block;
+    margin-top:0px;
+}
+
+.rd-content-main-text{
+    margin:30px 5px 30px 5px;
+    color:#47026c;
+    font-family:"ubuntu-light";
+    font-size:36px;
+    text-align:center;
+}
+.rd-content-mini-text{
+    margin:-10px 15px 0px 15px;
+    font-family:"poppins-light";
+    line-height:24px;
+    font-size:16px;
+    text-align:justify;
+    color:rgb(44, 43, 43);
+}
+.rating-container{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: auto ;
+}
+.twenty-four-hours{
+    font-size:3.5em;
+    color:#47026c;
+    font-family: "Ubuntu-medium";
+    line-height:1.6em;
+    text-align: center;
+}
+.twenty-four-hours-mini-text{
+    font-family: "poppins-light";
+    font-size:16px;
+    margin-bottom: 15px;
+}
+
+
+.sixth-content{
+    background-image: url('purple-pic.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom:30px;
+    height:35vh;
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    
+}
+.sixth-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(54, 69, 79, 0.555);
+    z-index: 1; 
+}
+.fa-quote-left{
+    font-size:6em;
+    color:rgba(255, 255, 255, 0.5);
+    z-index:2; 
+    position: relative;
+}
+.sixth-content-text{
+    margin:0px 15px 0px 15px;
+    font-family:"poppins-light";
+    line-height:24px;
+    font-size:18px;
+    text-align:center;
+    color:white; 
+    z-index:2;
+}
+
+.fourth-content{
+    background:linear-gradient(to bottom,#d8b1ff4d,#d8b1ff48);
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    margin:0px;
+    text-align: center;
+    width:100%;
+
+}
+.fth-content-main-text{
+    margin:30px 0px 30px 0px;
+    color:#47026c;
+    font-family:"ubuntu-light";
+    font-size:36px;
+    text-align:center;
+    position: relative;
+}
+.fth-content-mini-text{
+    margin:-10px 15px 0px 15px;
+    font-family:"poppins-light";
+    line-height:24px;
+    font-size:16px;
+    text-align:justify;
+    color:rgb(44, 43, 43);
+
+}
+
+
+
+.slider {
+    display:block;
+    align-items:center;
+    width:100%;
+    margin:20px 0px 30px 0px;
+    border:15px solid #aa9bb854;
+    border-radius:9px;
+    overflow: hidden;
+}
+
+.slides {
+    display:flex;
+    align-items: center;
+    transition: transform 0.5s ease;
+    position:relative;
+}
+
+.slide {
+    display:block;
+    min-width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+.slide-text-container{
+    text-align:left;
+    background:linear-gradient(to bottom,#d8b1ff4d,#d8b1ff48);
+    padding:8px;
+    display:block;
+
+}
+.slide-doc-desc-main-text{
+    font-family:"ubuntu-medium";
+    font-size:18px;
+    color:rgb(44, 43, 43);
+    margin:0px 0px 3px 0px;
+}
+.slide-doc-desc-mini-text{
+    font-family:"poppins-medium";
+    font-size:14px;
+    color:rgb(44, 43, 43);
+}
+
+
+
+.doc-images-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+}
+.doc-project-container{
+    position:relative;
+    overflow:hidden;
+    margin:0px 10px;
+
+}
+.doc-project {
+    width:100%;
+    transition: transform 0.5s linear;
+}
+
+.doc-project:hover {
+    transform: scale(1.08);
+    z-index:-1;
+}
+footer{
+    position:relative;
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+   }
+   .footer-main-text-container{
+    display: block;
+    align-items:center;
+    margin:20px 5px 30px 5px;
+
+
+   }
+   .footer-main-header{
+    margin:0px 5px 30px 5px;
+    color:#47026c;
+    font-family:"ubuntu-light";
+    font-size:36px;
+    text-align:center;
+    position: relative;
+   }
+   .footer-mini-text{
+    margin:-10px 15px 0px 15px;
+    font-family:"poppins-light";
+    line-height:24px;
+    font-size:16px;
+    text-align:justify;
+    color:rgb(44, 43, 43);
+
+   }
+   .two-doc-png{
+    width:100px;
+   }
+
+   .copy-right-container{
+    background-color: #47026c;
+    width:100%;
+    padding:20px;
+    align-items: center;
+    margin-top:0px;
+   }
+   .copy-right-text{
+    font-family:"ubuntu-light";
+    font-size:14px;
+    color:whitesmoke;
+    text-align: center;
+   }
+
+   @media (min-width:608px) and (max-width:900px){
+
+    header{
+        padding:10px;
+    }
+    .logo{
+        display:flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items:center;
+    }
+   
+    .logo-name{
+        font-size:17px;
+        margin:7px;
+    }
+    
+    .fa-bars{
+        color:white;
+        font-size:28px;
+        transition: transform 0.3s;
+    } 
+    .fa-bars-rotate{
+        transform: rotate(90deg);
+      }
+    .menu-list-hidden{
+        position:absolute;
+        background-color:white;
+        top:8%;
+        right:0%;
+        width:250px;
+        box-shadow: 0px 0px 15px rgb(80, 80, 80);
+        border-bottom-left-radius:15px;
+        display:none;     
+    }
+    
+    .menu-list-hidden>ul{
+        display:block;
+        margin:15px 0px;
+        align-items:center;
+    }
+   
+    .first-main-content-text-container{
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        justify-content: center;
+        margin:30px 0px 0px 0px;
+       }
+     
+       .first-main-content-text{
+        color:#47026c;
+        font-family:"ubuntu-light";
+        font-size:3.3em;
+        align-items: center;
+        margin:0px;
+        width:x;
+    }
+    
+    .first-main-content-mini-text{
+        margin:15px 100px 10px 100px;
+        font-family:"poppins-light";
+        line-height:24px;
+        font-size:18px;
+        text-align:center;
+        color:rgb(44, 43, 43);
+    }
+   
+
+    .first-image-content-image-container{
+        margin:15px 15px 20px 15px;
+        align-items: center;
+        max-width: 100%;
+        border:30px solid #aa9bb854;
+        border-radius:10px;
+    
+    }
+    .doctor-image{
+        width:100%;
+
+    }
+
+      
+     .doc-gudiance-image-container{
+        margin:15px 15px 20px 15px;
+        align-items: center;
+        max-width: 100%;
+        border:30px solid #aa9bb854;
+        border-radius:10px;
+      }
+      .doc-image{
+        width:100%;     
+      }
+    .nd-content-container{
+        margin: 20px 0px 10px 0px;
+    }
+      .nd-content-main-text{
+        margin:0px 10px 30px 10px;
+        font-size:3.5em;
+    
+    }
+    .nd-content-mini-text{
+        font-size:17px;
+    }
+    
+  
+    .doc-image-container{
+        margin:20px 15px 20px 15px;
+        align-items: center;
+        max-width: 100%;
+        border:30px solid #aa9bb854;
+        border-radius:10px;
+    }
+    
+    .rd-content-main-text{
+        margin:30px 5px 20px 5px;
+        font-size:3.4em;
+    }
+    .rd-content-mini-text{
+        margin:10px 55px 0px 55px;
+        font-size:17px; 
+        text-align: center;
+    }
+
+    .rating-container{
+        display:flex;
+        flex-direction:row;
+        text-align:left;
+        align-items:center;
+        margin:15px 0px 0px 0px;
+        }
+    .twenty-four-container{
+        display: flex;
+        flex-direction:column;
+        align-items:center;
+        margin-right:50px;
+        width: 150px; 
+        text-align:center;
+    }
+    .twenty-four-hours{
+        font-size:3.5em;
+        text-align:center;
+        
+        margin:0px;
+    }
+    .twenty-four-hours-mini-text{
+        font-size:17px;        
+    }
+    
+    .fourth-content{
+        width:100%;
+        }
+
+        .fourth-content{
+            background-color:#59189a;
+            display:flex;
+            flex-direction:column;
+            align-items: center;
+            margin:0px;
+            text-align: center;
+            width:100%;
+        
+        }
+        .fth-content-main-text{
+            margin:30px 10px 10px 10px;
+            color:white;
+            font-family:"ubuntu-light";
+            font-size:3.5em;
+            text-align:center;
+            position: relative;
+        } 
+        .fth-content-mini-text{
+            color:white;
+            margin:30px 10px 10px 10px;
+            font-family:"poppins-light";
+            text-align:center;
+            position: relative;
+            width:700px;
+        }
+        .fourth-content-main-text-container{
+            display:block;
+        }       
+    
+    .fifth-content-images{
+        width:250px;
+        height:250px;
+    }
+    
+    .fifth-content-image-main-text{
+        margin:13px 0px 5px 0px;
+        font-size:26px;
+    }
+    .fifth-content-image-mini-text{
+        margin:5px 10px 0px 15px;
+        font-size:17px;
+        text-align:center;
+        width:500px; 
+    }
+    
+    .sixth-content{
+         height:30vh;  
+         margin:30px 0px 0px 0px;        
+        
+    }
+    .slide-doc-desc-main-text{
+        color:white
+    }
+    .slide-doc-desc-mini-text{
+        color:white
+    }
+      
+        
+        
+       .footer-main-header{
+        margin:30px 0px 20px 0px;
+        font-size:3.5em;
+       }
+       .footer-mini-text{
+        margin:0px 30px 0px 30px;
+        padding:3px;
+        font-size:17px;
+        text-align: center;    
+       }
+      
+       .footer-image-container{
+        margin:15px 10px 20px 10px;
+        align-items: center;
+        max-width: 100%;
+        border:30px solid #aa9bb854;
+        border-radius:10px;       
+       }
+       .footer-image{
+        max-width:100%;
+        width:800px;
+        }
+    
+   }
+  
+
+
+
+
+
+
+@media (min-width:1024px) and (max-width:2154px){
+    .fa-bars{
+       display:none;
+    }
+
+    .menu-list-hidden{
+       position:relative;
+       background:none;
+       box-shadow:none;
+       width:100%;
+       display:block;
+       flex-direction:row;
+       z-index:none;
+       top:0%;
+       left:0%;
+   }
+   
+   .menu-list-hidden>ul{
+       display:flex;
+       flex-direction: row;
+       align-items: center;
+       margin:0;
+       padding:0;
+     
+   }
+   
+   .menu-list-hidden>ul>li{
+       color:white;
+       padding:0px;
+       margin:0px 3px 0px 3px;
+       font-family: "poppins-light";
+       border-radius:5px;
+       }
+   
+   
+   .menu-list-hidden>ul>li:hover{
+       background-color:#7e5f9457;
+       transition: background-color 0.3s;
+       padding:0px;
+       }
+       
+   
+  .first-main-content-text-container{
+   display:flex;
+   flex-direction:row;
+   align-items:center; 
+  }
+
+  .first-main-content-text-container-cover{
+   display:flex;
+   flex-direction:row;
+   align-items: center;
+   margin:50px 0px 50px 0px;
+  }
+
+  .first-content-text-container{
+   display: flex;
+   flex-direction: column;
+   align-items:start;
+   margin:-50px 250px 10px 0px;
+  }
+
+   .first-main-content-text{
+   font-size:4em;
+   text-align:left;
+   width:350px;
+   }
+   
+.first-main-content-mini-text{
+   font-family:"poppins-light";
+   line-height:24px;
+   font-size:16px;
+   text-align:left;
+   color:rgb(44, 43, 43);
+   width:400px;
+   margin:0px 0px 20px 0px;
+}
+.contact-container-large{
+    display:block;
+    margin:20px 0px 0px 0px;
+}
+.first-image-content-image-container{
+    margin-right:10px;
+    max-width:100%;
+    border:30px solid #aa9bb854;
+    border-radius: 10px;
+}
+.doctor-image{
+    border-radius:0px;
+    max-width:100%;
+    width:450px;
+    display: block;
+    object-fit: cover
+
+
+    
+}
+.nd-content-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:100%;
+
+}
+.doc-gudiance-image-container{
+    margin:30px 0px 30px 15px;
+    max-width: 100%;
+    border:30px solid #aa9bb854;
+    border-radius: 10px;
+    height:fit-content;
+    }
+.nd-content-text-container{
+    display:flex;
+    flex-direction: column;
+    margin:30px 40px 30px 150px; 
+    width:550px;
+}
+.nd-content-main-text{
+    margin:30px 5px 20px 5px;
+    color:#47026c;
+    font-family:"ubuntu-light";
+    font-size:3.5em;
+    text-align:left;
+    width:440px
+}
+.contact-container{
+    display:none;
+}
+.footer-contact-container{
+    display:block;
+}
+.nd-content-mini-text{
+    margin:0px 5px 0px 5px;
+}
+.rd-content-container{
+    display:flex;
+    flex-direction:row-reverse;
+    justify-content:space-between;
+    width:100%;
+    margin-bottom:30px;
+}
+.rd-image-container{
+    display:block;
+}
+.doc-image-container{
+    margin:30px 15px 0px 0px;
+    max-width: 100%;
+    border:30px solid #aa9bb854;
+    border-radius: 10px;
+    height:fit-content;
+}
+.doc-image{
+    margin-top:0px;
+    border-radius:0px;
+    max-width:100%;
+}
+.rd-text-container{
+    display:flex;
+    flex-direction: column;
+    margin:0px 0px 0px 50px;
+    width:500px;
+}
+.rd-content-main-text{
+    margin:30px 5px 15px 5px;
+    color:#47026c;
+    font-family:"ubuntu-light";
+    font-size:3.5em;
+    text-align:left;
+
+}
+.rd-content-mini-text{
+    margin:0px 5px 15px 5px;
+    font-family:"poppins-light";
+    line-height:24px;
+    font-size:16px;
+    text-align:justify;
+    color:rgb(44, 43, 43);  
+    width:370px;
+    }
+.rating-container{
+    display:flex;
+    flex-direction:row;
+    text-align:left;
+    align-items:start;
+    margin:10px 0px 0px 0px;
+    width: 250px;
+    }
+.twenty-four-container{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-right:50px;
+    width: 150px; 
+    text-align:left;
+}
+.twenty-four-hours{
+    font-size:3.3em;
+    color:#47026c;
+    font-family:"Ubuntu-medium";
+    line-height:1.2em;
+    text-align:left;
+    margin:0px;
+}
+.twenty-four-hours-mini-text{
+    font-family: "poppins-light";
+    font-size:16px;
+}
+.ninty-nine-container{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-left:-30px;
+    
+}
+.fourth-content{
+    background-color:#59189a;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    margin:0px;
+    text-align: center;
+    width:100%;
+
+}
+.fourth-content-main-text-container{
+    display:block;
+}
+.fourth-diagnostic-tools-container{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.sixth-content{
+    height:50vh;  
+    width:100%;  
+} 
+.sixth-content-text{
+    width:30rem;
+    
+}
+.fa-quote-left{
+    font-size:10em;
+     margin-top:10px;
+}
+.fourth-content{
+    background-color:#59189a;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    margin:0px;
+    text-align: center;
+    width:100%;
+
+}
+.fourth-content-main-text-container{
+    display:block;
+    }
+.fth-content-main-text{
+    color:white;
+    margin:-50px 15px 15px 15px;
+    font-family:"ubuntu-light";
+    font-size:4em;
+    text-align:left;
+    width:600px;
+}
+.fth-content-mini-text{
+    color:white;
+    margin:0px 15px 15px 15px;
+    font-family:"poppins-light";
+    line-height:24px;
+    font-size:16px;
+    text-align:left;
+    width:400px;
+}
+.slider {
+    display:block;
+    align-items:center;
+    width:650px;
+    margin:30px 15px 30px 0px;
+    border:30px solid #aa9bb854;
+    border-radius:9px;
+    overflow: hidden;
+    height:fit-content;
+}
+
+.slides {
+    display:flex;
+    align-items:center;
+    transition: transform 0.5s ease;
+    position:relative;
+}
+
+.slide {
+    display:block;
+    min-width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+.slide-text-container{
+    text-align:left;
+    background:linear-gradient(to bottom,#d8b1ff13,#d8b1ff00);
+    padding:8px;
+    display:block;
+
+}
+.slide-doc-desc-main-text{
+    font-family:"ubuntu-light";
+    font-size:18px;
+    color:white;
+    margin:0px 0px 3px 0px;
+}
+.slide-doc-desc-mini-text{
+    font-family:"poppins-light";
+    font-size:14px;
+    color:white;
+}
+.doc-images-container{
+    display:grid;
+    flex-direction:row;
+    grid-template-columns:repeat(3,1fr);
+    align-items:center;
+    position: relative;
+    margin:20px;
+}
+.doc-project-image-container{
+    display: flex;
+    flex-direction:column;
+    width:400px;
+    margin:0px 0px 30px 0px;
+    position:relative
+}
+.doc-project{
+    margin:auto;
+    transition: transform 0.5s ease;
+    width:100%;
+}
+.doc-project-image-container img:hover{
+    transform: scale(1.01); 
+  
+}
+footer{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+}
+.footer-main-text-container{
+    display:flex;
+    align-items:center;
+    flex-direction: column;
+
+}
+.footer-main-header{
+    font-size:3.5em;
+}
+.footer-mini-text{
+    width:500px;
+    text-align:center
+}
+
+
+
+
+
+
+}
