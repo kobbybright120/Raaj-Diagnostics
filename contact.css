@@ -172,7 +172,8 @@ header{
           }
     .contant-text>p{
         font-family:"poppins-light";
-        cursor:pointer
+        cursor:pointer;
+        color:white;
 }
 .send-us-message-container{
     display:flex;
